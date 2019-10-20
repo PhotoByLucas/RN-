@@ -26,7 +26,16 @@ export default class MyCard extends React.Component {
             </Card.Body>
             <Card.Footer
               content="一分钟"
-              extra={<AtButton size="small">开始执行</AtButton>}
+              extra={
+                <AtButton
+                  size="small"
+                  onPress={() => {
+                    console.log(this.props);
+                    // this.props;
+                  }}>
+                  开始执行
+                </AtButton>
+              }
             />
           </Card>
         </WingBlank>
